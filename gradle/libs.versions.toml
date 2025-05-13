@@ -78,6 +78,7 @@ androidx-startup = { module = "androidx.startup:startup-runtime", version.ref = 
 androidx-tvprovider = { module = "androidx.tvprovider:tvprovider", version.ref = "androidx-tvprovider" }
 androidx-window = { module = "androidx.window:window", version.ref = "androidx-window" }
 androidx-work-runtime = { module = "androidx.work:work-runtime", version.ref = "androidx-work" }
+material = { module = "com.google.android.material:material", version = "1.12.0" } # Added line
 
 # Dependency Injection
 koin-android-compat = { module = "io.insert-koin:koin-android-compat", version.ref = "koin" }

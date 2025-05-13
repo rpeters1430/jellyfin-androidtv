@@ -41,7 +41,7 @@ android {
 			resValue("string", "app_search_suggest_intent_data", "content://${namespace}.content/intent")
 
 			// Set flavored application name
-			resValue("string", "app_name", "@string/app_name_release")
+			resValue("string", "app_name", "New Jellyfin")
 
 			buildConfigField("boolean", "DEVELOPMENT", "false")
 		}
@@ -56,7 +56,7 @@ android {
 			resValue("string", "app_search_suggest_intent_data", "content://${namespace + applicationIdSuffix}.content/intent")
 
 			// Set flavored application name
-			resValue("string", "app_name", "@string/app_name_debug")
+			resValue("string", "app_name", "New Jellyfin Debug")
 
 			buildConfigField("boolean", "DEVELOPMENT", (defaultConfig.versionCode!! < 100).toString())
 		}
@@ -87,6 +87,7 @@ val versionTxt by tasks.registering {
 dependencies {
 	// Jellyfin
 	implementation(projects.playback.core)
+	implementation(libs.material)
 	implementation(projects.playback.jellyfin)
 	implementation(projects.playback.media3.exoplayer)
 	implementation(projects.playback.media3.session)
